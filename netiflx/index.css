@@ -1,0 +1,193 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #141414;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    border-bottom: 2px solid #ff7f7f;
+}
+
+header .logo {
+    color: #ff7f7f;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ff7f7f;
+}
+
+
+.banner {
+    background: linear-gradient(to right, #ff7f7f, #7fbfff);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.banner .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.banner button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+button.play {
+    background-color: #ffffff;
+    color: #141414;
+}
+
+button.play:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+button.info {
+    background-color: #141414;
+    color: white;
+    border: 2px solid white;
+}
+
+button.info:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+
+.catalogo {
+    padding: 40px 0;
+}
+
+.catalogo h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    cursor: pointer;
+    width: 15vw;
+    height: 11vw;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+    border-bottom: 2px solid #333;
+}
+
+.card p {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+footer {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid #ff7f7f;
+}
+
+footer p {
+    color: #aaa;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .banner h1 {
+        font-size: 36px;
+    }
+
+    .banner p {
+        font-size: 18px;
+    }
+
+    .cards {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner h1 {
+        font-size: 28px;
+    }
+
+    .banner p {
+        font-size: 16px;
+    }
+
+    .banner .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
